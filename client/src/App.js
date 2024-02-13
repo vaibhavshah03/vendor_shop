@@ -4,6 +4,8 @@ import Header from "./components/Header/Header";
 import Home from "./components/Home/Home";
 import Error from "./components/Error/Error";
 import Login from "./components/Login/Login";
+import Admin from "./components/Login/Admin";
+import Register from "./components/Login/Register";
 
 import AppContext from "./utils/Context";
 
@@ -19,6 +21,8 @@ function App() {
                     <Routes>
                         <Route path='/' element={<Home/>}/>
                         <Route path='/login' element={<Login/>}/>
+                        <Route path='/register' element={<Register/>}/>
+                        <Route path='/admin' element={<Admin/>}/>
                         <Route path='*' element={<Error/>}/>
                     </Routes>
                     <Footer/>
