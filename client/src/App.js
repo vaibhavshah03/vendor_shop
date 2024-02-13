@@ -3,6 +3,7 @@ import "./App.css";
 import Header from "./components/Header/Header";
 import Home from "./components/Home/Home";
 import Error from "./components/Error/Error";
+import Login from "./components/Login/Login";
 
 import AppContext from "./utils/Context";
 
@@ -17,6 +18,7 @@ function App() {
                     <Header/>
                     <Routes>
                         <Route path='/' element={<Home/>}/>
+                        <Route path='/login' element={<Login/>}/>
                         <Route path='*' element={<Error/>}/>
                     </Routes>
                     <Footer/>
