@@ -16,6 +16,11 @@ import Manageuser from "./components/AdminPanel/ManageUser";
 import AddProducts from "./components/AdminPanel/AddProducts";
 import ManageOrder from "./components/AdminPanel/ManageOrder";
 import ManageLabour from "./components/AdminPanel/ManageLabour";
+import UserDashboard from "./components/UserDashboard/UserDashboard";
+import ViewOrders from "./components/UserDashboard/ViewOrders";
+import ProfileDetails from "./components/UserDashboard/ProfileDetails";
+import Notification from "./components/UserDashboard/Notification";
+import EditProfile from "./components/UserDashboard/EditProfile";
 
 import AppContext from "./utils/Context";
 
@@ -44,6 +49,11 @@ function App() {
                         <Route path='/adminpanel/addproducts' element={<AddProducts/>}/>
                         <Route path='/adminpanel/manageorders' element={<ManageOrder/>}/>
                         <Route path='/adminpanel/managelabours' element={<ManageLabour/>}/>
+                        <Route path='/userdashboard' element={<UserDashboard/>}/>
+                        <Route path='/userdashboard/manageorders' element={<ViewOrders/>}/>
+                        <Route path='/userdashboard/profile' element={<ProfileDetails/>}/>
+                        <Route path='/userdashboard/edit' element={<EditProfile/>}/>
+                        <Route path='/userdashboard/notifications' element={<Notification/>}/>
                         <Route path='*' element={<Error/>}/>
                     </Routes>
                     <Footer/>
